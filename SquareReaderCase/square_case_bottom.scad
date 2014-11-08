@@ -1,3 +1,21 @@
+/*
+    Square Card Reader Case
+    Copyright (C) 2014  Gabriel L. Rael
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 p=3.175;
 bx=21.59;
 by=38.989;
@@ -17,7 +35,7 @@ difference() {
 				translate([-10.8,-21.6,0]) {
 					cube([21.6,21.6,30]);
 				}
-	
+
 				translate([0,3.554,0]) {
 					rotate([-90,0.0]) {
 						cylinder(h=14.224, r=1.778,$fa=5, $fs=0.1);
