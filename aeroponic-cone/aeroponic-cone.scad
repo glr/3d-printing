@@ -19,7 +19,7 @@
 difference() {
 	union() {
 		cylinder(85, r1=22.5, r2=6);
-		cylinder(2, r=35);
+		cylinder(2, r=30);
 	}
 	translate([0, 0, -2]) {
 		cylinder(84, r1=20.25, r2=3);
