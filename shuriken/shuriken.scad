@@ -17,17 +17,32 @@
 */
 
 difference(){
-	cube([90, 90, 5], true);
+	cube([80, 80, 5], true);
 	translate([0,0,-5]){
 		for (i = [0:90:270]) {
 			rotate(i, [0, 0, 1]) {
-				translate([-155, 0, 0]){ 
-					cylinder(10, r=120, true, $fa=5, $fs=0.1);
+				translate([-151, 0, 0]){
+					taperedSideCutout();
 				}
 			}
 		}
-		cylinder(10, r=7.5, true, $fa=5, $fs=0.1);
+		squareCenterCutout();
 	}
 }
 
-				
+module flatSideCutout() {
+	cylinder(10, r=120, true, $fa=5, $fs=0.1);
+}
+
+module taperedSideCutout() {
+	cylinder(10, 100, 130, , $fa=5, $fs=0.1);
+	cylinder(10, 130, 100, , $fa=5, $fs=0.1);	
+}
+
+module squareCenterCutout() {
+	cube([15, 15, 40], true);
+}
+
+module circleCenterCutout() {
+	cylinder(10, r=9, true, $fa=5, $fs=0.1);
+}
