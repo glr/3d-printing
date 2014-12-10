@@ -22,11 +22,11 @@ difference(){
 		for (i = [0:90:270]) {
 			rotate(i, [0, 0, 1]) {
 				translate([-151, 0, 0]){
-					taperedSideCutout();
+					flatSideCutout();
 				}
 			}
 		}
-		squareCenterCutout();
+		circleCenterCutout();
 	}
 }
 
